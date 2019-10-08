@@ -35,11 +35,34 @@ public class ImporterApplication implements CommandLineRunner {
 
         conteudos.forEach(conteudo->{
             conteudo.getJsonArray("dados").forEach(dados ->{
-               String nome = ((JsonObject) dados).getString("nomeCivil");
-               nome = Normalizer.normalize(nome, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
-               String response = luis.createEntity(Json.createObjectBuilder().add("name", nome).build());
-               System.out.println(response);
+                String nome = ((JsonObject) dados).getString("nomeCivil");
+                nome = Normalizer.normalize(nome, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
+
+                JsonObject json = Json.createObjectBuilder()
+                    .add("name", nome)
+                    .build();
+                System.out.println(luis.createEntity(json));
+
+                String text;
+
+                text = "Quanto gastou "+nome+" no ano de 2019?";
+                System.out.println(luis.addLabel(createJson(text,nome)));
+
+                text = "Quanto roubou "+nome+" entre em 3 meses?";
+                System.out.println(luis.addLabel(createJson(text,nome)));
             });
         });
+    }
+
+    private JsonObject createJson(String text, String nome){
+        return Json.createObjectBuilder()
+            .add("text", text)
+            .add("intentName","Somar")
+            .add("entityLabels", Json.createArrayBuilder()
+                    .add(Json.createObjectBuilder()
+                        .add("entityName", "Deputadx")
+                        .add("startCharIndex", text.indexOf(nome))
+                        .add("endCharIndex", text.indexOf(nome) + nome.length())))
+            .build();
     }
 }

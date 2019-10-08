@@ -37,25 +37,31 @@ public class LuisManager{
     @Value("${port}")
     private String port;
 
-    public String createEntity(JsonObject jentity){
-        String url = env.getProperty("createentities");
-
+    public String createEntity(JsonObject json){
+        String url = env.getProperty("entities");
         url = String.format(url,hostname,appid,version);
-        String result = null;
+        return send(url,json);
+    }
 
+    public String addLabel(JsonObject json){
+        String url = env.getProperty("exemple");
+        url = String.format(url,hostname,appid,version);
+        return send(url,json);
+    }
+
+    public String send(String url,JsonObject json){
         try (CloseableHttpClient httpclient = HttpClientBuilder.create().build()) {
             HttpPost request = new HttpPost(url);
             request.addHeader("Content-Type","application/json");
             request.setHeader("Ocp-Apim-Subscription-Key",subscriptionkey);
-            request.setEntity(new StringEntity(jentity.toString()));
+            request.setEntity(new StringEntity(json.toString()));
 
             HttpResponse response = httpclient.execute(request);
             HttpEntity entity = response.getEntity();
-
-            result = new JsonManager().toString(entity.getContent());
+            return  new JsonManager().toString(entity.getContent());
         }catch (IOException e){
             e.printStackTrace();
         }
-        return result;
+        return null;
     }
 }
