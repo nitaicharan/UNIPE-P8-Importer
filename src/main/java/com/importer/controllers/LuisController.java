@@ -44,4 +44,15 @@ public class LuisController{
         }
         return response;
     }
+    
+    public JsonObject createHierarchicalEntity(JsonObject obj){
+        JsonObject response = null;
+        try{
+            String url = env.getProperty("createhierarchicalentity");
+            response = service.post(url,obj);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+        return response;
+    }
 }

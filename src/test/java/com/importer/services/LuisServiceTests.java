@@ -20,11 +20,23 @@ public class LuisServiceTests {
     private LuisController controller;
 
     @Test
-    public void createEntityTestCreateEntityDeputadx(){
+    public void createEntityTestDeputadx(){
         JsonObject json = Json.createObjectBuilder()
             .add("name", "Deputadx")
             .build();
         JsonObject obj = controller.createEntity(json);
+        Assert.assertTrue(obj.getInt("code") == 200 || obj.getInt("code") == 201);
+    }
+
+    @Test
+    public void createHierarchicalEntityDataInicioFim(){
+        JsonObject json = Json.createObjectBuilder()
+            .add("name", "Data")
+            .add("children", Json.createArrayBuilder()
+                    .add("Inicio")
+                    .add("Fim"))
+            .build();
+        JsonObject obj = controller.createHierarchicalEntity(json);
         Assert.assertTrue(obj.getInt("code") == 200 || obj.getInt("code") == 201);
     }
 }
