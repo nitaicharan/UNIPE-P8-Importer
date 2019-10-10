@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import javax.json.JsonObject;
+import javax.json.JsonValue;
 
 import com.importer.utils.JsonManager;
 
@@ -30,7 +31,7 @@ public class LuisService{
     @Value("${port}")
     private String port;
 
-    public JsonObject post(String url,JsonObject json) throws IOException{
+    public JsonObject post(String url,JsonValue json) throws IOException{
         url = String.format(url,hostname,appid,version);
 
         CloseableHttpClient httpclient = HttpClientBuilder.create().build();

@@ -1,7 +1,6 @@
 package com.importer.controllers;
 
 import com.importer.services.LuisService;
-import com.importer.utils.JsonManager;
 
 import org.springframework.core.env.Environment;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import java.io.IOException;
 
 import javax.json.JsonObject;
+import javax.json.JsonValue;
 
 @Controller
 @PropertySource("classpath:luis.properties")
@@ -20,19 +20,7 @@ public class LuisController{
     private Environment env;
     @Autowired
     private LuisService service;
-    @Autowired
-    private JsonManager jsonmanager;
 
-    public JsonObject addLabel(JsonObject obj){
-        JsonObject response = null;
-        try{
-            String url = env.getProperty("addlabel");
-            response = service.post(url,obj);
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-        return response;
-    }
 
     public JsonObject createEntity(JsonObject obj){
         JsonObject response = null;
@@ -44,7 +32,29 @@ public class LuisController{
         }
         return response;
     }
-    
+
+    public JsonObject createIntent(JsonObject obj){
+        JsonObject response = null;
+        try{
+            String url = env.getProperty("createintent");
+            response = service.post(url,obj);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+        return response;
+    }
+
+    public JsonObject batchAddLabels(JsonValue obj){
+        JsonObject response = null;
+        try{
+            String url = env.getProperty("batchaddlabels");
+            response = service.post(url,obj);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+        return response;
+    }
+
     public JsonObject createHierarchicalEntity(JsonObject obj){
         JsonObject response = null;
         try{
