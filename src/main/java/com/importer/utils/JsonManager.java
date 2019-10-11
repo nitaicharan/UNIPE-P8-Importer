@@ -5,6 +5,7 @@ import javax.json.JsonObject;
 import org.springframework.stereotype.Component;
 
 import javax.json.Json;
+import javax.json.JsonArray;
 
 import java.io.File;
 import java.io.FileReader;
@@ -43,10 +44,21 @@ public final class JsonManager {
         return conteudos;
     }
 
-    public static JsonObject toJsonObjects(String path){
+    public static JsonObject toJsonObject(String path){
         JsonObject json = null;
         try(FileReader reader = new FileReader(path)){
             json = Json.createReader(reader).readObject();
+            reader.close();
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+        return json;
+    }
+
+    public static JsonArray toJsonArray(String path){
+        JsonArray json = null;
+        try(FileReader reader = new FileReader(path)){
+            json = Json.createReader(reader).readArray();
             reader.close();
         }catch(IOException e){
             e.printStackTrace();

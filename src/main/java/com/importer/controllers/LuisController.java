@@ -2,6 +2,7 @@ package com.importer.controllers;
 
 import java.io.IOException;
 
+import javax.json.JsonArray;
 import javax.json.JsonObject;
 import javax.json.JsonValue;
 
@@ -22,57 +23,36 @@ public class LuisController{
     private LuisService service;
 
     public JsonObject createEntity(JsonObject obj){
-        JsonObject response = null;
-        try{
-            String url = env.getProperty("createentity");
-            response = service.post(url,obj);
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-        return response;
+        String url = env.getProperty("createentity");
+        return send(url,obj);
     }
 
     public JsonObject createIntent(JsonObject obj){
-        JsonObject response = null;
-        try{
-            String url = env.getProperty("createintent");
-            response = service.post(url,obj);
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-        return response;
+        String url = env.getProperty("createintent");
+        return send(url,obj);
     }
 
-    public JsonObject batchAddLabels(JsonValue obj){
-        JsonObject response = null;
-        try{
-            String url = env.getProperty("batchaddlabels");
-            response = service.post(url,obj);
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-        return response;
+    public JsonObject batchAddLabels(JsonArray obj){
+        String url = env.getProperty("batchaddlabels");
+        return send(url,obj);
     }
 
     public JsonObject createHierarchicalEntity(JsonObject obj){
-        JsonObject response = null;
-        try{
-            String url = env.getProperty("createhierarchicalentity");
-            response = service.post(url,obj);
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-        return response;
+        String url = env.getProperty("createhierarchicalentity");
+        return send(url,obj);
     }
 
     public JsonObject createClosedListEntity(JsonObject obj){
-        JsonObject response = null;
+        String url = env.getProperty("createclosedlistentity");
+        return send(url,obj);
+    }
+
+    private JsonObject send(String url,JsonValue obj){
         try{
-            String url = env.getProperty("createclosedlistentity");
-            response = service.post(url,obj);
+            return service.post(url,obj);
         }catch(IOException e){
             e.printStackTrace();
         }
-        return response;
+        return null;
     }
 }
