@@ -43,6 +43,17 @@ public final class JsonManager {
         return conteudos;
     }
 
+    public static JsonObject toJsonObjects(String path){
+        JsonObject json = null;
+        try(FileReader reader = new FileReader(path)){
+            json = Json.createReader(reader).readObject();
+            reader.close();
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+        return json;
+    }
+
     public static JsonObject toJsonObject(InputStream stream, int code) throws IOException{
         InputStreamReader streamreader = new InputStreamReader(stream);
         StringBuilder sb = new StringBuilder();

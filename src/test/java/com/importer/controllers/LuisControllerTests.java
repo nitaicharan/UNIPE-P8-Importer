@@ -3,11 +3,10 @@ package com.importer.controllers;
 import javax.json.Json;
 import javax.json.JsonObject;
 
-import com.importer.controllers.LuisController;
+import com.importer.utils.JsonManager;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.junit.jupiter.api.AfterAll;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -21,6 +20,9 @@ public class LuisControllerTests {
     private LuisController controller;
 
     @Test
+    public void contextLoads(){
+    }
+
     public void createEntityTest(){
         JsonObject json = Json.createObjectBuilder()
             .add("name", "Deputadx")
@@ -29,7 +31,6 @@ public class LuisControllerTests {
         Assert.assertTrue(obj.getInt("code") == 200 || obj.getInt("code") == 201);
     }
 
-    @Test
     public void createIntentTest(){
         JsonObject json = Json.createObjectBuilder()
             .add("name", "Somar")
@@ -38,7 +39,6 @@ public class LuisControllerTests {
         Assert.assertTrue(obj.getInt("code") == 200 || obj.getInt("code") == 201);
     }
 
-    @Test
     public void createHierarchicalEntityTest(){
         JsonObject json = Json.createObjectBuilder()
             .add("name", "Data")
@@ -50,8 +50,12 @@ public class LuisControllerTests {
         Assert.assertTrue(obj.getInt("code") == 200 || obj.getInt("code") == 201);
     }
 
-    @Test
-    @AfterAll
+    public void createClosedListEntityTest(){
+        JsonObject json = JsonManager.toJsonObjects("tmp/deputados.json");
+        JsonObject obj = controller.createClosedListEntity(json);
+        Assert.assertTrue(obj.getString("response"),obj.getInt("code") == 200 || obj.getInt("code") == 201);
+    }
+
     public void batchAddLabelsTest(){
         String deputadx = "Kim Kataguiri";
         String data = "2019";
