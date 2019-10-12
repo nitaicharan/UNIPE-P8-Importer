@@ -7,6 +7,7 @@ import com.importer.utils.JsonManager;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -49,6 +50,13 @@ public class LuisControllerTests {
     public void batchAddLabelsTest(){
         JsonArray json = JsonManager.toJsonArray("tmp/batchaddlabels.json");
         JsonObject obj = controller.batchAddLabels(json);
+        Assert.assertTrue(obj.getString("response"),obj.getInt("code") == 200 || obj.getInt("code") == 201);
+    }
+
+    @Test
+    public void batchAddPatternsTest(){
+        JsonArray json = JsonManager.toJsonArray("tmp/batchaddpatterns.json");
+        JsonObject obj = controller.batchAddPatterns(json);
         Assert.assertTrue(obj.getString("response"),obj.getInt("code") == 200 || obj.getInt("code") == 201);
     }
 }

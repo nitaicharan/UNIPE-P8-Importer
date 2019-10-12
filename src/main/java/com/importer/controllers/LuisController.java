@@ -37,6 +37,11 @@ public class LuisController{
         return send(url,obj);
     }
 
+    public JsonObject batchAddPatterns(JsonArray obj){
+        String url = env.getProperty("batchaddpatterns");
+        return send(url,obj);
+    }
+
     public JsonObject createHierarchicalEntity(JsonObject obj){
         String url = env.getProperty("createhierarchicalentity");
         return send(url,obj);
