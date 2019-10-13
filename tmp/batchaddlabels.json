@@ -16,7 +16,286 @@
 		]
 	}
 	,{
-		"text": "Quanto foi o gasto de Kim Patroca Kataguiri no ano de 2019?",
+		"text": "Quanto gastou Kim Patroca Kataguiri no ano de 2019?",
+		"intentName": "Somar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 14,
+				"endCharIndex": 34
+			}
+			,{
+				"entityName": "Data",
+				"startCharIndex": 46,
+				"endCharIndex": 49
+			}
+		]
+	}
+    ,{
+		"text": "Somar quanto Kim Patroca Kataguiri gastou no ano de 2019",
+		"intentName": "Somar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 13,
+				"endCharIndex": 33
+			}
+			,{
+				"entityName": "Data",
+				"startCharIndex": 52,
+				"endCharIndex": 55
+			}
+		]
+	}
+	,{
+		"text": "Somar quanto gastou Kim Patroca Kataguiri no ano de 2019",
+		"intentName": "Somar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 19,
+				"endCharIndex": 24
+			}
+			,{
+				"entityName": "Data",
+				"startCharIndex": 52,
+				"endCharIndex": 55
+			}
+		]
+	}
+    ,{
+		"text": "Quanto Kim Patroca Kataguiri gastou entre 01/01/2018 e 01/01/2019?",
+		"intentName": "Somar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 7,
+				"endCharIndex": 27
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 42,
+				"endCharIndex": 51
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 55,
+				"endCharIndex": 64
+			}
+		]
+	}
+    ,{
+		"text": "Quanto Kim Patroca Kataguiri gastou entre 01/01/2018 a 01/01/2019?",
+		"intentName": "Somar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 7,
+				"endCharIndex": 27
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 42,
+				"endCharIndex": 51
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 55,
+				"endCharIndex": 64
+			}
+		]
+	}
+    ,{
+		"text": "Quanto gastou Kim Patroca Kataguiri entre 01/01/2018 e 01/01/2019?",
+		"intentName": "Somar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 14,
+				"endCharIndex": 34
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 42,
+				"endCharIndex": 51
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 55,
+				"endCharIndex": 64
+			}
+		]
+	}
+    ,{
+		"text": "Quanto gastou Kim Patroca Kataguiri entre 01/01/2018 a 01/01/2019?",
+		"intentName": "Somar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 14,
+				"endCharIndex": 34
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 42,
+				"endCharIndex": 51
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 55,
+				"endCharIndex": 64
+			}
+		]
+	}
+    ,{
+		"text": "Somar quanto gastou Kim Patroca Kataguiri entre 01/01/2018 e 01/01/2019",
+		"intentName": "Somar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 20,
+				"endCharIndex": 40
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 48,
+				"endCharIndex": 57
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 61,
+				"endCharIndex": 70
+			}
+		]
+	}
+    ,{
+		"text": "Somar quanto gastou Kim Patroca Kataguiri entre 01/01/2018 a 01/01/2019",
+		"intentName": "Somar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 13,
+				"endCharIndex": 32
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 48,
+				"endCharIndex": 57
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 61,
+				"endCharIndex": 70
+			}
+		]
+	}
+    ,{
+		"text": "Somar Kim Patroca Kataguiri 01/01/2018 e 01/01/2019",
+		"intentName": "Somar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 6,
+				"endCharIndex": 26
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 28,
+				"endCharIndex": 37
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 41,
+				"endCharIndex": 50
+			}
+		]
+	}
+    ,{
+		"text": "Somar Kim Patroca Kataguiri 01/01/2018 a 01/01/2019",
+		"intentName": "Somar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 6,
+				"endCharIndex": 26
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 28,
+				"endCharIndex": 37
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 41,
+				"endCharIndex": 50
+			}
+		]
+	}
+    ,{
+		"text": "Kim Patroca Kataguiri 01/01/2018 e 01/01/2019",
+		"intentName": "Somar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 0,
+				"endCharIndex": 20
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 22,
+				"endCharIndex": 31
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 35,
+				"endCharIndex": 44
+			}
+		]
+	}
+    ,{
+		"text": "Kim Patroca Kataguiri 01/01/2018 a 01/01/2019",
+		"intentName": "Somar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 0,
+				"endCharIndex": 20
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 22,
+				"endCharIndex": 31
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 35,
+				"endCharIndex": 44
+			}
+		]
+	}
+    ,{
+		"text": "Kim Patroca Kataguiri 01/01/2018 01/01/2019",
+		"intentName": "Somar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 0,
+				"endCharIndex": 20
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 22,
+				"endCharIndex": 31
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 33,
+				"endCharIndex": 42
+			}
+		]
+	}
+    ,{
+		"text": "01/01/2018 01/01/2019 Kim Patroca Kataguiri",
 		"intentName": "Somar",
 		"entityLabels":[
 			{
@@ -25,9 +304,46 @@
 				"endCharIndex": 42
 			}
 			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 0,
+				"endCharIndex": 9
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 11,
+				"endCharIndex": 20
+			}
+		]
+	}
+    ,{
+		"text": "Kim Patroca Kataguiri 2019",
+		"intentName": "Somar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 0,
+				"endCharIndex": 20
+			}
+			,{
 				"entityName": "Data",
-				"startCharIndex": 54,
-				"endCharIndex": 57
+				"startCharIndex": 22,
+				"endCharIndex": 25
+			}
+		]
+	}
+    ,{
+		"text": "2019 Kim Patroca Kataguiri",
+		"intentName": "Somar",
+		"entityLabels":[
+			{
+				"entityName": "Data",
+				"startCharIndex": 0,
+				"endCharIndex": 3
+			}
+			,{
+				"entityName": "Deputadx",
+				"startCharIndex": 5,
+				"endCharIndex": 25
 			}
 		]
 	}

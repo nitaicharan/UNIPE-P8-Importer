@@ -1,34 +1,13 @@
 [
     {
-        "pattern": "[Somar ]Quanto gastou {Deputadx} no ano de {Data}[?]",
+        "pattern": "[Somar ]Quanto (gastou {Deputadx} | {Deputadx} gastou) (entre [a data de] {Data::Inicio} e {Data::Fim} | no ano de {Data})[?]",
         "intent": "Somar"
     }
     ,{
-        "pattern": "[Somar ]Quanto {Deputadx} gastou no ano de {Data}[?]",
+        "pattern": "[Somar](({Deputadx} {Data} | {Data} {Deputadx}) | ({Deputadx} [entre] {Data::Inicio} [e] {Data::Fim} | [entre] {Data::Inicio} [e] {Data::Fim} {Deputadx}))",
         "intent": "Somar"
-    }
-    ,{
-        "pattern": "[Somar ]Quanto gastou {Deputadx} entre a data de {Data::Inicio} e {Data::Fim}[?]",
-        "intent": "Somar"
-    }
-    ,{
-        "pattern": "[Somar ]Quanto {Deputadx} gastou entre a data de {Data::Inicio} e {Data::Fim}[?]",
-        "intent": "Somar"
-    }
-    ,{
-        "pattern": "[Somar ]Quanto gastou {Deputadx} entre {Data::Inicio} e {Data::Fim}[?]",
-        "intent": "Somar"
-    }
-    ,{
-        "pattern": "[Somar ]Quanto {Deputadx} gastou entre {Data::Inicio} e {Data::Fim}[?]",
-        "intent": "Somar"
-    }
-    ,{
-        "pattern": "Somar {Deputadx} {Data}",
-        "intent": "Somar"
-    }
-    ,{
-        "pattern": "Somar {Data} {Deputadx} ",
+    },{
+        "pattern": "[Somar](({Deputadx} {Data} | {Data} {Deputadx}) | ({Deputadx}[entre] {Data::Inicio} [a] {Data::Fim} | [entre] {Data::Inicio} [a] {Data::Fim} {Deputadx}))",
         "intent": "Somar"
     }
 ]
