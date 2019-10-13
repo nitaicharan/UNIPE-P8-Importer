@@ -32,6 +32,11 @@ public class LuisController{
         return send(url,obj);
     }
 
+    public JsonObject addLabel(JsonObject obj){
+        String url = env.getProperty("addlabel");
+        return send(url,obj);
+    }
+
     public JsonObject batchAddLabels(JsonArray obj){
         String url = env.getProperty("batchaddlabels");
         return send(url,obj);

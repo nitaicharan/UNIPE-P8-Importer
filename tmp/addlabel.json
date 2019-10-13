@@ -1,0 +1,16 @@
+{
+    "text": "Quanto foi o gasto de Kim Patroca Kataguiri no ano de 2019?",
+    "intentName": "Somar",
+    "entityLabels":[
+        {
+            "entityName": "Deputadx",
+            "startCharIndex": 22,
+            "endCharIndex": 42
+        }
+        ,{
+            "entityName": "Data",
+            "startCharIndex": 54,
+            "endCharIndex": 57
+        }
+    ]
+}

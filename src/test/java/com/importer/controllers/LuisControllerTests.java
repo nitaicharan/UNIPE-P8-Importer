@@ -7,7 +7,6 @@ import com.importer.utils.JsonManager;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.junit.jupiter.api.AfterAll;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -44,6 +43,12 @@ public class LuisControllerTests {
     public void createClosedListEntityTest(){
         JsonObject json = JsonManager.toJsonObject("tmp/closedlistentity.json");
         JsonObject obj = controller.createClosedListEntity(json);
+        Assert.assertTrue(obj.getString("response"),obj.getInt("code") == 200 || obj.getInt("code") == 201);
+    }
+
+    public void addLabelTest(){
+        JsonObject json = JsonManager.toJsonObject("tmp/addlabel.json");
+        JsonObject obj = controller.addLabel(json);
         Assert.assertTrue(obj.getString("response"),obj.getInt("code") == 200 || obj.getInt("code") == 201);
     }
 
