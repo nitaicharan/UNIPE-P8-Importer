@@ -22,38 +22,13 @@ public class LuisController{
     @Autowired
     private LuisService service;
 
-    public JsonObject createEntity(JsonObject obj){
-        String url = env.getProperty("createentity");
+    public JsonObject send(JsonObject obj,String property){
+        String url = env.getProperty(property);
         return send(url,obj);
     }
 
-    public JsonObject createIntent(JsonObject obj){
-        String url = env.getProperty("createintent");
-        return send(url,obj);
-    }
-
-    public JsonObject addLabel(JsonObject obj){
-        String url = env.getProperty("addlabel");
-        return send(url,obj);
-    }
-
-    public JsonObject batchAddLabels(JsonArray obj){
-        String url = env.getProperty("batchaddlabels");
-        return send(url,obj);
-    }
-
-    public JsonObject batchAddPatterns(JsonArray obj){
-        String url = env.getProperty("batchaddpatterns");
-        return send(url,obj);
-    }
-
-    public JsonObject createHierarchicalEntity(JsonObject obj){
-        String url = env.getProperty("createhierarchicalentity");
-        return send(url,obj);
-    }
-
-    public JsonObject createClosedListEntity(JsonObject obj){
-        String url = env.getProperty("createclosedlistentity");
+    public JsonObject send(JsonArray obj,String property){
+        String url = env.getProperty(property);
         return send(url,obj);
     }
 

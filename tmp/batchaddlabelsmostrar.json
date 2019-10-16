@@ -1,0 +1,308 @@
+[
+	{
+		"text": "Quais gastos de Kim Patroca Kataguiri no ano de 2019?",
+		"intentName": "Mostrar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 16,
+				"endCharIndex": 36
+			}
+			,{
+				"entityName": "Data",
+				"startCharIndex": 48,
+				"endCharIndex": 51
+			}
+		]
+	}
+	,{
+		"text": "Mostrar quais gastos de Kim Patroca Kataguiri no ano 2008",
+		"intentName": "Mostrar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 24,
+				"endCharIndex": 44
+			}
+			,{
+				"entityName": "Data",
+				"startCharIndex": 53,
+				"endCharIndex": 56
+			}
+		]
+	}
+    ,{
+		"text": "Quais gastou de Kim Patroca Kataguiri entre 05/03/1999 e 20/11/2000?",
+		"intentName": "Mostrar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 16,
+				"endCharIndex": 36
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 44,
+				"endCharIndex": 53
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 57,
+				"endCharIndex": 66
+			}
+		]
+	}
+    ,{
+		"text": "Quais gastou de Kim Patroca Kataguiri entre 25/12/1995 a 11/01/1996?",
+		"intentName": "Mostrar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 16,
+				"endCharIndex": 36
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 44,
+				"endCharIndex": 53
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 57,
+				"endCharIndex": 66
+			}
+		]
+	}
+    ,{
+		"text": "Mostrar quais gastos de Kim Patroca Kataguiri entre 15/04/1997 e 04/10/2013",
+		"intentName": "Mostrar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 24,
+				"endCharIndex": 44
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 52,
+				"endCharIndex": 61
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 65,
+				"endCharIndex": 74
+			}
+		]
+	}
+    ,{
+		"text": "Mostrar quais gastou Kim Patroca Kataguiri entre 17/06/1993 a 09/06/2004",
+		"intentName": "Mostrar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 21,
+				"endCharIndex": 41
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 49,
+				"endCharIndex": 58
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 62,
+				"endCharIndex": 71
+			}
+		]
+	}
+    ,{
+		"text": "Mostrar Kim Patroca Kataguiri 12/12/1992 e 25/03/2007",
+		"intentName": "Mostrar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 8,
+				"endCharIndex": 28
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 30,
+				"endCharIndex": 39
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 43,
+				"endCharIndex": 52
+			}
+		]
+	}
+    ,{
+		"text": "Mostrar Kim Patroca Kataguiri 01/01/2001 a 02/02/2002",
+		"intentName": "Mostrar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 8,
+				"endCharIndex": 28
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 30,
+				"endCharIndex": 39
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 43,
+				"endCharIndex": 52
+			}
+		]
+	}
+    ,{
+		"text": "Mostrar 01/01/2001 a 02/02/2002 Kim Patroca Kataguiri",
+		"intentName": "Mostrar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 32,
+				"endCharIndex": 52
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 8,
+				"endCharIndex": 17
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 21,
+				"endCharIndex": 30
+			}
+		]
+	}
+    ,{
+		"text": "Mostrar Kim Patroca Kataguiri 1993",
+		"intentName": "Mostrar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 8,
+				"endCharIndex": 28
+			}
+			,{
+				"entityName": "Data",
+				"startCharIndex": 30,
+				"endCharIndex": 33
+			}
+		]
+	}
+    ,{
+		"text": "Mostrar 2002 Kim Patroca Kataguiri",
+		"intentName": "Mostrar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 13,
+				"endCharIndex": 33
+			}
+			,{
+				"entityName": "Data",
+				"startCharIndex": 8,
+				"endCharIndex": 11
+			}
+		]
+	}
+	,{
+		"text": "Mostrar gastos Kim Patroca Kataguiri 2017",
+		"intentName": "Mostrar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 15,
+				"endCharIndex": 35
+			}
+			,{
+				"entityName": "Data",
+				"startCharIndex": 37,
+				"endCharIndex": 40
+			}
+		]
+	}
+	,{
+		"text": "Mostrar gasto 1993 Kim Patroca Kataguiri",
+		"intentName": "Mostrar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 19,
+				"endCharIndex": 39
+			}
+			,{
+				"entityName": "Data",
+				"startCharIndex": 14,
+				"endCharIndex": 17
+			}
+		]
+	}
+    ,{
+		"text": "Mostrar gasto Kim Patroca Kataguiri 19/09/1990 a 03/04/2003",
+		"intentName": "Mostrar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 14,
+				"endCharIndex": 34
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 36,
+				"endCharIndex": 45
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 49,
+				"endCharIndex": 58
+			}
+		]
+	}
+    ,{
+		"text": "Mostrar gastos Kim Patroca Kataguiri 21/01/1997 e 03/07/2002",
+		"intentName": "Mostrar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 15,
+				"endCharIndex": 35
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 37,
+				"endCharIndex": 46
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 50,
+				"endCharIndex": 59
+			}
+		]
+	}
+    ,{
+		"text": "Mostrar gastos Kim Patroca Kataguiri 03/06/2004 até 01/11/2017",
+		"intentName": "Mostrar",
+		"entityLabels":[
+			{
+				"entityName": "Deputadx",
+				"startCharIndex": 15,
+				"endCharIndex": 35
+			}
+			,{
+				"entityName": "Data::Inicio",
+				"startCharIndex": 37,
+				"endCharIndex": 46
+			}
+			,{
+				"entityName": "Data::Fim",
+				"startCharIndex": 52,
+				"endCharIndex": 61
+			}
+		]
+	}
+]

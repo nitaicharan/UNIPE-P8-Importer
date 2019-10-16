@@ -19,49 +19,61 @@ public class LuisControllerTests {
     @Autowired
     private LuisController controller;
 
+    @Test
     public void contextLoads(){
     }
 
-    public void createEntityTest(){
-        JsonObject json = JsonManager.toJsonObject("tmp/entity.json");
-        JsonObject obj = controller.createEntity(json);
+    public void deputadxCreateEntityTest(){
+        JsonObject json = JsonManager.toJsonObject("tmp/entitydeputadx.json");
+        JsonObject obj = controller.send(json, "createentity");
         Assert.assertTrue(obj.getInt("code") == 200 || obj.getInt("code") == 201);
     }
 
-    public void createIntentTest(){
-        JsonObject json = JsonManager.toJsonObject("tmp/intent.json");
-        JsonObject obj = controller.createIntent(json);
+    public void dataCreateHierarchicalEntityTest(){
+        JsonObject json = JsonManager.toJsonObject("tmp/hierarchicalentitydata.json");
+        JsonObject obj = controller.send(json,"createhierarchicalentity");
         Assert.assertTrue(obj.getInt("code") == 200 || obj.getInt("code") == 201);
     }
 
-    public void createHierarchicalEntityTest(){
-        JsonObject json = JsonManager.toJsonObject("tmp/hierarchicalentity.json");
-        JsonObject obj = controller.createHierarchicalEntity(json);
-        Assert.assertTrue(obj.getInt("code") == 200 || obj.getInt("code") == 201);
+    public void deputadxCreateClosedListEntityTest(){
+        JsonObject json = JsonManager.toJsonObject("tmp/closedlistentitydeputadx.json");
+        JsonObject obj = controller.send(json,"createclosedlistentity");
+        Assert.assertTrue(obj.getString("response"),obj.getInt("code") == 200 || obj.getInt("code") == 201);
     }
 
-    public void createClosedListEntityTest(){
-        JsonObject json = JsonManager.toJsonObject("tmp/closedlistentity.json");
-        JsonObject obj = controller.createClosedListEntity(json);
+    public void somarBatchAddPatternsTest(){
+        JsonArray json = JsonManager.toJsonArray("tmp/batchaddpatternssomar.json");
+        JsonObject obj = controller.send(json,"batchaddpatterns");
         Assert.assertTrue(obj.getString("response"),obj.getInt("code") == 200 || obj.getInt("code") == 201);
     }
 
     public void addLabelTest(){
         JsonObject json = JsonManager.toJsonObject("tmp/addlabel.json");
-        JsonObject obj = controller.addLabel(json);
+        JsonObject obj = controller.send(json,"addlabel");
         Assert.assertTrue(obj.getString("response"),obj.getInt("code") == 200 || obj.getInt("code") == 201);
     }
 
-    public void batchAddLabelsTest(){
-        JsonArray json = JsonManager.toJsonArray("tmp/batchaddlabels.json");
-        JsonObject obj = controller.batchAddLabels(json);
+    public void somarCreateIntentTest(){
+        JsonObject json = JsonManager.toJsonObject("tmp/intentsomar.json");
+        JsonObject obj = controller.send(json,"createintent");
+        Assert.assertTrue(obj.getInt("code") == 200 || obj.getInt("code") == 201);
+    }
+
+    public void mostrarCreateIntentTest(){
+        JsonObject json = JsonManager.toJsonObject("tmp/intentmostrar.json");
+        JsonObject obj = controller.send(json,"createintent");
+        Assert.assertTrue(obj.getInt("code") == 200 || obj.getInt("code") == 201);
+    }
+
+    public void somarBatchAddLabelsTest(){
+        JsonArray json = JsonManager.toJsonArray("tmp/batchaddlabelssomar.json");
+        JsonObject obj = controller.send(json,"batchaddlabels");
         Assert.assertTrue(obj.getString("response"),obj.getInt("code") == 200 || obj.getInt("code") == 201);
     }
 
-    @Test
-    public void batchAddPatternsTest(){
-        JsonArray json = JsonManager.toJsonArray("tmp/batchaddpatterns.json");
-        JsonObject obj = controller.batchAddPatterns(json);
+    public void mostrarBatchAddLabelsTest(){
+        JsonArray json = JsonManager.toJsonArray("tmp/batchaddlabelsmostrar.json");
+        JsonObject obj = controller.send(json,"batchaddlabels");
         Assert.assertTrue(obj.getString("response"),obj.getInt("code") == 200 || obj.getInt("code") == 201);
     }
 }

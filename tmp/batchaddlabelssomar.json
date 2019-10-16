@@ -1,6 +1,6 @@
 [
 	{
-		"text": "Quanto Kim Patroca Kataguiri gastou no ano de 2019?",
+		"text": "Quanto Kim Patroca Kataguiri gastou no ano de 1993?",
 		"intentName": "Somar",
 		"entityLabels":[
 			{
@@ -16,7 +16,7 @@
 		]
 	}
 	,{
-		"text": "Quanto gastou Kim Patroca Kataguiri no ano de 2019?",
+		"text": "Quanto gastou Kim Patroca Kataguiri no ano de 1890?",
 		"intentName": "Somar",
 		"entityLabels":[
 			{
@@ -32,7 +32,7 @@
 		]
 	}
     ,{
-		"text": "Somar quanto Kim Patroca Kataguiri gastou no ano de 2019",
+		"text": "Somar quanto Kim Patroca Kataguiri gastou no ano de 1988",
 		"intentName": "Somar",
 		"entityLabels":[
 			{
@@ -48,7 +48,7 @@
 		]
 	}
 	,{
-		"text": "Somar quanto gastou Kim Patroca Kataguiri no ano de 2019",
+		"text": "Somar quanto gastou Kim Patroca Kataguiri no ano de 2000",
 		"intentName": "Somar",
 		"entityLabels":[
 			{
@@ -64,7 +64,7 @@
 		]
 	}
     ,{
-		"text": "Quanto Kim Patroca Kataguiri gastou entre 01/01/2018 e 01/01/2019?",
+		"text": "Quanto Kim Patroca Kataguiri gastou entre 22/05/1820 e 25/09/1980?",
 		"intentName": "Somar",
 		"entityLabels":[
 			{
@@ -85,7 +85,7 @@
 		]
 	}
     ,{
-		"text": "Quanto Kim Patroca Kataguiri gastou entre 01/01/2018 a 01/01/2019?",
+		"text": "Quanto Kim Patroca Kataguiri gastou entre 23/11/1790 a 04/12/2001?",
 		"intentName": "Somar",
 		"entityLabels":[
 			{
@@ -106,7 +106,7 @@
 		]
 	}
     ,{
-		"text": "Quanto gastou Kim Patroca Kataguiri entre 01/01/2018 e 01/01/2019?",
+		"text": "Quanto gastou Kim Patroca Kataguiri entre 29/05/1903 e 21/03/1989?",
 		"intentName": "Somar",
 		"entityLabels":[
 			{
@@ -127,7 +127,7 @@
 		]
 	}
     ,{
-		"text": "Quanto gastou Kim Patroca Kataguiri entre 01/01/2018 a 01/01/2019?",
+		"text": "Quanto gastou Kim Patroca Kataguiri entre 10/01/1999 a 01/01/2019?",
 		"intentName": "Somar",
 		"entityLabels":[
 			{
@@ -148,7 +148,7 @@
 		]
 	}
     ,{
-		"text": "Somar quanto gastou Kim Patroca Kataguiri entre 01/01/2018 e 01/01/2019",
+		"text": "Somar quanto gastou Kim Patroca Kataguiri entre 09/11/1900 e 05/10/1981",
 		"intentName": "Somar",
 		"entityLabels":[
 			{
@@ -169,7 +169,7 @@
 		]
 	}
     ,{
-		"text": "Somar quanto gastou Kim Patroca Kataguiri entre 01/01/2018 a 01/01/2019",
+		"text": "Somar quanto gastou Kim Patroca Kataguiri entre 14/02/2002 a 08/09/2014",
 		"intentName": "Somar",
 		"entityLabels":[
 			{
@@ -190,7 +190,7 @@
 		]
 	}
     ,{
-		"text": "Somar Kim Patroca Kataguiri 01/01/2018 e 01/01/2019",
+		"text": "Somar Kim Patroca Kataguiri 09/08/1900 e 22/03/1903",
 		"intentName": "Somar",
 		"entityLabels":[
 			{
@@ -211,7 +211,7 @@
 		]
 	}
     ,{
-		"text": "Somar Kim Patroca Kataguiri 01/01/2018 a 01/01/2019",
+		"text": "Somar Kim Patroca Kataguiri 03/11/2009 a 06/05/2011",
 		"intentName": "Somar",
 		"entityLabels":[
 			{
@@ -228,122 +228,6 @@
 				"entityName": "Data::Fim",
 				"startCharIndex": 41,
 				"endCharIndex": 50
-			}
-		]
-	}
-    ,{
-		"text": "Kim Patroca Kataguiri 01/01/2018 e 01/01/2019",
-		"intentName": "Somar",
-		"entityLabels":[
-			{
-				"entityName": "Deputadx",
-				"startCharIndex": 0,
-				"endCharIndex": 20
-			}
-			,{
-				"entityName": "Data::Inicio",
-				"startCharIndex": 22,
-				"endCharIndex": 31
-			}
-			,{
-				"entityName": "Data::Fim",
-				"startCharIndex": 35,
-				"endCharIndex": 44
-			}
-		]
-	}
-    ,{
-		"text": "Kim Patroca Kataguiri 01/01/2018 a 01/01/2019",
-		"intentName": "Somar",
-		"entityLabels":[
-			{
-				"entityName": "Deputadx",
-				"startCharIndex": 0,
-				"endCharIndex": 20
-			}
-			,{
-				"entityName": "Data::Inicio",
-				"startCharIndex": 22,
-				"endCharIndex": 31
-			}
-			,{
-				"entityName": "Data::Fim",
-				"startCharIndex": 35,
-				"endCharIndex": 44
-			}
-		]
-	}
-    ,{
-		"text": "Kim Patroca Kataguiri 01/01/2018 01/01/2019",
-		"intentName": "Somar",
-		"entityLabels":[
-			{
-				"entityName": "Deputadx",
-				"startCharIndex": 0,
-				"endCharIndex": 20
-			}
-			,{
-				"entityName": "Data::Inicio",
-				"startCharIndex": 22,
-				"endCharIndex": 31
-			}
-			,{
-				"entityName": "Data::Fim",
-				"startCharIndex": 33,
-				"endCharIndex": 42
-			}
-		]
-	}
-    ,{
-		"text": "01/01/2018 01/01/2019 Kim Patroca Kataguiri",
-		"intentName": "Somar",
-		"entityLabels":[
-			{
-				"entityName": "Deputadx",
-				"startCharIndex": 22,
-				"endCharIndex": 42
-			}
-			,{
-				"entityName": "Data::Inicio",
-				"startCharIndex": 0,
-				"endCharIndex": 9
-			}
-			,{
-				"entityName": "Data::Fim",
-				"startCharIndex": 11,
-				"endCharIndex": 20
-			}
-		]
-	}
-    ,{
-		"text": "Kim Patroca Kataguiri 2019",
-		"intentName": "Somar",
-		"entityLabels":[
-			{
-				"entityName": "Deputadx",
-				"startCharIndex": 0,
-				"endCharIndex": 20
-			}
-			,{
-				"entityName": "Data",
-				"startCharIndex": 22,
-				"endCharIndex": 25
-			}
-		]
-	}
-    ,{
-		"text": "2019 Kim Patroca Kataguiri",
-		"intentName": "Somar",
-		"entityLabels":[
-			{
-				"entityName": "Data",
-				"startCharIndex": 0,
-				"endCharIndex": 3
-			}
-			,{
-				"entityName": "Deputadx",
-				"startCharIndex": 5,
-				"endCharIndex": 25
 			}
 		]
 	}
